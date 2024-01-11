@@ -10,8 +10,25 @@ public class UniqueChars {
      * except that all the duplicate characters are removed,
      * unless they are space characters.
      */
-    public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+    public static String uniqueChars(String str) {
+        String fin = "";
+        int length = str.length();
+        for (int i=0; i<length; i++){
+         //assigns char at i to 'c'
+         char c= str.charAt(i);
+         if (i==str.indexOf(c)){
+            fin+=c;
+         }
+         else if (c == ' '){
+            fin+=c;
+         }
+
+           } 
+        
+   
+
+
+
+        return fin;
     }
 }
